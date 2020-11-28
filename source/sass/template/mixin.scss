@@ -48,6 +48,8 @@ $z-indexes: (
     }
 }
 
+//Выравнивание элементов внутри блока
+//Пример использования: .block {@include flex-block($jus-con: space-between);}
 @mixin flex-block($jus-con: center, $al-it: center) {
     display: flex;
     justify-content: $jus-con;

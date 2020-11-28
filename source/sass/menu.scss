@@ -1,0 +1,4 @@
+.menu {
+    @include flex-block($jus-con: space-between);
+    padding: 20px 0;
+}

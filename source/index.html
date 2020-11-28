@@ -4,25 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Стартовый шаблон</title>
+    <title>Библиотека компонентов</title>
     <meta name="description" content="Стартовый шаблон для созадни проектов"/>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
 </head>
 <body>
     <div style="display: none">
         <include src="build/img/sprite_auto.svg"></include>
     </div>
     <header class="header">
-        <div class="wrapper"></div>
+        <div class="wrapper">
+            <div class="menu">
+                <div class="menu__box">
+                    <a href="#"><img src="img/logo.png" alt="Логотип проекта"></a>
+                </div>
+                <div class="menu__box">
+                    <nav class="navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a class="navigation__link link" href="#">Cards</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
     <section class="main">
-        <h2 class="main__title">
-            Все получилось!!! Удачного кодинга :=))
-        </h2>
-        <div class="icon-box">
-            <svg class="icon-address" width="24" height="24">
-                <use xlink:href="#icon-address"></use>
-            </svg>
+        <div class="wrapper">
+            <div class="cards">
+                <h2 class="cards__title title">Cards</h2>
+                <div class="cards__list">
+                    <article class="card">
+                        <div class="card__container">
+                            <a class="card__img-link" href="#"><img class="card__img" src="img/card1.jpg" alt="Речка Алтая"></a>
+                            <div class="card__content">
+                                <div class="card__top">
+                                    <p class="card__country">Россия</p>
+                                    <h3 class="card__title"><a class="card__title-link" href="#">Путешествие в горы Алтая</a></h3>
+                                    <p class="card__sale">
+                                    <span class="card__sale-icon">
+                                        <svg class="card__sale-svg" width="16" height="16">
+                                            <use xlink:href="#icon-sale"></use>
+                                        </svg>
+                                    </span>
+                                        <span class="card__sale-text">Цена уже скидкой 30%</span>
+                                    </p>
+                                </div>
+                                <div class="card__bottom">
+                                    <time class="card__date">
+                                    <span class="card__data-icon">
+                                        <svg class="card__calendar" width="16" height="16">
+                                            <use xlink:href="#icon-calendar"></use>
+                                        </svg>
+                                    </span>
+                                        <span class="card__data-text">24.05.20</span>
+                                    </time>
+                                    <p class="card__price">
+                                        <span class="card__cost">26 000</span>
+                                        <span class="card__currency">
+                                        <svg class="card__ruble" width="24" height="24">
+                                            <use xlink:href="#icon-ruble"></use>
+                                        </svg>
+                                    </span>
+                                    </p>
+                                    <p class="card__mark mark">
+                                        <a class="mark__link mark__link--nature" href="#">Природа</a>
+                                        <a class="mark__link mark__link--mountains" href="#">Горы</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__container">
+                                <a class="card__img-link" href="#"><img class="card__img" src="img/card2.jpg" alt="Речка Алтая"></a>
+                            <div class="card__content">
+                                <div class="card__top">
+                                    <p class="card__country">Россия</p>
+                                    <h3 class="card__title"><a class="card__title-link" href="#">Путешествие в горы Алтая</a></h3>
+                                    <p class="card__sale">
+                                    <span class="card__sale-icon">
+                                        <svg class="card__sale-svg" width="16" height="16">
+                                            <use xlink:href="#icon-sale"></use>
+                                        </svg>
+                                    </span>
+                                        <span class="card__sale-text">Цена уже скидкой 30%</span>
+                                    </p>
+                                </div>
+                                <div class="card__bottom">
+                                    <time class="card__date">
+                                    <span class="card__data-icon">
+                                        <svg class="card__calendar" width="16" height="16">
+                                            <use xlink:href="#icon-calendar"></use>
+                                        </svg>
+                                    </span>
+                                        <span class="card__data-text">24.05.20</span>
+                                    </time>
+                                    <p class="card__price">
+                                        <span class="card__cost">26 000</span>
+                                        <span class="card__currency">
+                                        <svg class="card__ruble" width="24" height="24">
+                                            <use xlink:href="#icon-ruble"></use>
+                                        </svg>
+                                    </span>
+                                    </p>
+                                    <p class="card__mark mark">
+                                        <a class="mark__link mark__link--nature" href="#">Природа</a>
+                                        <a class="mark__link mark__link--mountains" href="#">Горы</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__container">
+                                <a class="card__img-link" href="#"><img class="card__img" src="img/card3.jpg" alt="Речка Алтая"></a>
+                            <div class="card__content">
+                                <div class="card__top">
+                                    <p class="card__country">Россия</p>
+                                    <h3 class="card__title"><a class="card__title-link" href="#">Путешествие в горы Алтая</a></h3>
+                                    <p class="card__sale">
+                                    <span class="card__sale-icon">
+                                        <svg class="card__sale-svg" width="16" height="16">
+                                            <use xlink:href="#icon-sale"></use>
+                                        </svg>
+                                    </span>
+                                        <span class="card__sale-text">Цена уже скидкой 30%</span>
+                                    </p>
+                                </div>
+                                <div class="card__bottom">
+                                    <time class="card__date">
+                                    <span class="card__data-icon">
+                                        <svg class="card__calendar" width="16" height="16">
+                                            <use xlink:href="#icon-calendar"></use>
+                                        </svg>
+                                    </span>
+                                        <span class="card__data-text">24.05.20</span>
+                                    </time>
+                                    <p class="card__price">
+                                        <span class="card__cost">26 000</span>
+                                        <span class="card__currency">
+                                        <svg class="card__ruble" width="24" height="24">
+                                            <use xlink:href="#icon-ruble"></use>
+                                        </svg>
+                                    </span>
+                                    </p>
+                                    <p class="card__mark mark">
+                                        <a class="mark__link mark__link--nature" href="#">Природа</a>
+                                        <a class="mark__link mark__link--mountains" href="#">Горы</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__container">
+                                <a class="card__img-link" href="#"><img class="card__img" src="img/card3.jpg" alt="Речка Алтая"></a>
+                            <div class="card__content">
+                                <div class="card__top">
+                                    <p class="card__country">Россия</p>
+                                    <h3 class="card__title"><a class="card__title-link" href="#">Путешествие в горы Алтая</a></h3>
+                                    <p class="card__sale">
+                                    <span class="card__sale-icon">
+                                        <svg class="card__sale-svg" width="16" height="16">
+                                            <use xlink:href="#icon-sale"></use>
+                                        </svg>
+                                    </span>
+                                        <span class="card__sale-text">Цена уже скидкой 30%</span>
+                                    </p>
+                                </div>
+                                <div class="card__bottom">
+                                    <time class="card__date">
+                                    <span class="card__data-icon">
+                                        <svg class="card__calendar" width="16" height="16">
+                                            <use xlink:href="#icon-calendar"></use>
+                                        </svg>
+                                    </span>
+                                        <span class="card__data-text">24.05.20</span>
+                                    </time>
+                                    <p class="card__price">
+                                        <span class="card__cost">26 000</span>
+                                        <span class="card__currency">
+                                        <svg class="card__ruble" width="24" height="24">
+                                            <use xlink:href="#icon-ruble"></use>
+                                        </svg>
+                                    </span>
+                                    </p>
+                                    <p class="card__mark mark">
+                                        <a class="mark__link mark__link--nature" href="#">Природа</a>
+                                        <a class="mark__link mark__link--mountains" href="#">Горы</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </div>
         <div class="button-box">
             <button class="button button--modal-open" type="button">Показать</button>
@@ -31,14 +208,14 @@
             <a class="button" href="#">Продолжить</a>
         </div>
         <div class="slider">
-            <div class="slider-item">
-                <img src="img/img1.jpg" alt="">
+            <div class="slider__item">
+                <img class="slider__img" src="img/card1.jpg" alt="">
             </div>
-            <div class="slider-item">
-                <img src="img/img2.jpg" alt="">
+            <div class="slider__item">
+                <img class="slider__img" src="img/img2.jpg" alt="">
             </div>
-            <div class="slider-item">
-                <img src="img/img3.jpg" alt="">
+            <div class="slider__item">
+                <img class="slider__img" src="img/img3.jpg" alt="">
             </div>
         </div>
     </section>

@@ -1,0 +1,26 @@
+.mark {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__link {
+        padding: 5px;
+        font-size: 10px;
+        line-height: 10px;
+        color: #ffffff;
+        background-color: #ee8800;
+        text-transform: uppercase;
+        border-radius: 10px;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &--nature {
+            background-color: #ee8800;
+        }
+
+        &--nature {
+            background-color: #6d6de6;
+        }
+    }
+}
